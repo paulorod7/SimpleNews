@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<string name="app_name">SimpleNews</string>
+<string name="menu_addfeed">Adicionar feed</string>
+<string name="norssfeeds">Sem feeds rss [menu] para inserir</string>
+<string name="noentries">Nenhuma entrada</string>
+<string name="menu_refresh">Atualizar</string>
+<string name="contextmenu_delete">Deletar</string>
+<string name="goto_url">ir para link</string>
+<string name="favorites">Favoritos</string>
+
+<string name="editfeed_title">Editar feed</string>
+<string name="contextmenu_edit">Editar</string>
+<string name="contextmenu_refresh">Atualizado em</string>
+<string name="menu_settings">Configs</string>
+<string name="contextmenu_markasread">Marcar como Lida</string>
+<string name="contextmenu_hideread">Não mostrar lidas</string>
+<string name="contextmenu_showread">Mostrar lidas</string>
+<string name="menu_allread">Marcar todas como lidas</string>
+<string name="menu_import">Importar via OPML</string>
+<string name="menu_export">Exportar via OPML</string>
+<string name="menu_about">About</string>
+
+<!-- For translators: you don't need to translate the following string -->
+<string name="license">Copyright (c) 2011 Paulo Rodrigues (paulo@paulo.art.br)\n\n
+ \n\nPermission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+\n\n
+The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.
+\n\n
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+THE SOFTWARE.
+</string>
+
+<string name="settings_category_refresh">Atualização automática</string>
+<string name="settings_enabled">Habilitar</string>
+<string name="settings_refreshenabled_description">Controla as atualizações automáticas dos feeds</string>
+<string name="settings_refreshinterval">Intervalo de atualização</string>
+<string name="settings_refreshinterval_description">Intervalo entre as atualizações</string>
+
+<string name="settings_category_notofications">Notificações</string>
+<string name="settings_notificationsenabled_description">Controla a aparência das notificações no caso de novos feeds</string>
+<string name="settings_notificationsringtone">Ringtone</string>
+<string name="settings_notificationsringtone_description">Selecione um ringtone para notificação de novos feeds</string>
+<string name="settings_notificationsvibrate">Vibrar</string>
+<string name="settings_notificationsvibrate_description">Controla se o alerta vibratório irá acionar ao novos feeds</string>
+
+<string name="settings_category_contentpresentation">Apresentação do conteúdo</string>
+<string name="settings_prioritize">Priorizar feeds não lidos</string>
+<string name="settings_prioritize_description">Mostrar não lidos antes dos já lidos</string>
+<string name="settings_keeptime">Tempo que o feed será armazenado</string>
+<string name="settings_keeptime_description">Feeds mais antigos que o tempo setado irão ser deletados</string>
+<string name="settings_fetchpictures">Baixar imagens</string>
+<string name="settings_fetchpictures_description">Baixar todas as imagens do feed e guarda-las</string>
+<string name="settings_blacktextwhite">Texto preto em fundo branco</string>
+<string name="settings_blacktextwhite_description">apresenta o feed rss com as cores invertidas</string>
+<string name="settings_fontsize">Tamanho da fonte</string>
+<string name="settings_fontsize_description">Seta o tamanho da fonte para os feeds</string>
+
+<string name="settings_refreshonopen">Atualiza os feeds ao iniciar</string>
+<string name="settings_refreshonopen_description">Atualiza todos os feeds ao inicializar o aplicativo</string>
+
+<string name="settings_hideread">Esconder posts lidos</string>
+<string name="settings_hideread_description">Esconder posts do widget se estes ja foram lidos</string>
+<string name="settings_entrysettings">Configuração de Posts</string>
+<string name="settings_visiblefeeds">Feeds visíveis</string>
+<string name="settings_showtabs">Mostrar tabs</string>
+<string name="settings_showtabs_description">tabs adicionais para favoritos e todos os feeds</string>
+<string name="settings_category_network">Network</string>
+<string name="settings_proxy_wifionly">somente Wifi</string>
+<string name="settings_proxy_wifionly_description">Usar Proxy somente para wifi</string>
+<string name="settings_proxy_host">Host</string>
+<string name="settings_proxy_port">Port</string>
+
+<string name="never">nunca</string>
+<string name="update">Atualizado</string>
+<string name="unread">não lidos</string>
+<string name="newentries">novos posts</string>
+<string name="rss_feeds">RSS feeds</string>
+<string name="error">Erro</string>
+<string name="priority">Prioridade</string>
+<string name="select_feeds">Selecione os feeds</string>
+<string name="all_feeds">Todos feeds</string>
+<string name="all">Todos</string>
+<string name="overview">Resumo</string>
+
+<string name="error_feedurlexists">Essa url já existe</string>
+<string name="error_feedimport">O arquivo não pode ser importado</string>
+<string name="error_feedexport">Falha ao exportar. microSD ativada para gravação?</string>
+<string name="error_invalidimportfile">formato inválido para importar</string>
+
+<string name="feed_url">URL</string>
+<string name="optional">(opcional)</string>
+<string name="websiteorfeed">(website ou feed)</string>
+<string name="feed_title">Título</string>
+<string name="select_file">Selecionar arquivo (SD-root)</string>
+
+<string name="question_deletefeed">Você realmente quer deletar este feed e todas notícias dele?</string>
+
+<string name="button_usesdcard">Usar SD-Card. restart manual necessário</string>
+
+<string name="message_exportedto">Exportador para %s.</string>
+
+<string-array name="settings_intervals">
+<item>1 minuto</item>
+<item>5 Minutos</item>
+<item>15 minutos</item>
+<item>30 minutos</item>
+<item>1 hora</item>
+<item>2 horas</item>
+<item>6 horas</item>
+<item>1 dia</item>
+</string-array>
+
+<string-array name="settings_keeptimes">
+<item>1 dia</item>
+<item>2 dias</item>
+<item>4 dias</item>
+<item>1 semana</item>
+<item>2 semanas</item>
+<item>1 mês</item>
+</string-array>
+
+<string-array name="settings_fontsizes">
+<item>Padrão</item>
+<item>+1</item>
+<item>+2</item>
+<item>+3</item>
+</string-array>
+</resources>

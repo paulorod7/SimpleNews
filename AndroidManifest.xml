@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+      package="com.prss.simplenews"
+      android:versionCode="11" android:versionName="1.1">
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <application android:icon="@drawable/rss_icon2" android:label="@string/app_name" android:allowClearUserData="true" android:testOnly="false" android:allowBackup="true" android:debuggable="true">
+    	<service android:name=".service.RefreshService"/>
+    	<service android:name=".service.FetcherService"/>
+    	<provider android:name=".provider.FeedDataContentProvider" android:authorities="com.prss.simplenews.provider.FeedData" />
+        <activity android:name=".MainTabActivity" android:label="@string/app_name" android:launchMode="singleTask">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".RSSOverview" android:launchMode="singleTask" />
+        <activity android:name=".AboutActivity" android:launchMode="singleTask" />
+		<activity android:name=".EntriesListActivity" android:launchMode="singleTask">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:mimeType="vnd.android.cursor.dir/vnd.feeddata.entry" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".EntryActivity" android:launchMode="singleTask">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:mimeType="vnd.android.cursor.item/vnd.feeddata.entry" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ApplicationPreferencesActivity"/>
+        <activity android:name=".widget.WidgetConfigActivity">
+		    <intent-filter>
+		        <action android:name="android.appwidget.action.APPWIDGET_CONFIGURE" />
+		    </intent-filter>
+		</activity>
+        <receiver android:name=".widget.SparseRSSAppWidgetProvider" >
+		    <intent-filter>
+		        <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+		        <action android:name="com.prss.simplenews.widget.UPDATE" />
+		    </intent-filter>
+		    <meta-data android:name="android.appwidget.provider"
+		               android:resource="@xml/widgetinfo" />
+		</receiver>
+		<receiver android:name=".RefreshBroadcastReceiver" >
+		    <intent-filter>
+		        <action android:name="com.prss.simplenews.REFRESH" />
+		    </intent-filter>
+		</receiver>
+		<receiver android:name=".SDMountBroadcastReceiver" >
+		    <intent-filter>
+		        <action android:name="android.intent.action.MEDIA_MOUNTED" />
+		    </intent-filter>
+		    <intent-filter>
+		        <action android:name="com.prss.simplenews.RESTART" />
+		    </intent-filter>
+		</receiver>
+		<receiver android:name=".BootCompletedBroadcastReceiver" >
+		    <intent-filter>
+		        <action android:name="android.intent.action.BOOT_COMPLETED" />
+		    </intent-filter>
+		</receiver>
+    </application>
+    <uses-sdk android:minSdkVersion="7" android:targetSdkVersion="8"/>
+</manifest> 
